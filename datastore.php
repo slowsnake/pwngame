@@ -6,16 +6,17 @@
 		$user_ip=$_POST["ipaddress"];
 				
 		$sql="insert into tbl_data1 (user_name,user_message,user_ip) values('".$user_name."','".$user_message."','".$user_ip."')";
-		echo $sql;		
-		if(mysqli_query($conn,$sql)
+
+		if(mysql_query($conn,$sql)
 			{
 			echo "Recorded successfully";
+			exit("hi");
 		}
 		else
 		{
-			echo "Error: <br>" . mysqli_error($conn);
+			echo "Error: <br>" . mysql_error($conn);
 
 		}
-		mysqli_close($conn);
+		mysql_close($conn);
 	
 		?>
