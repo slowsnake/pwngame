@@ -4,13 +4,14 @@
 		$db_pass="stupidpassword";
 		$db_name="learn1";
 
-		$conn = mysqli_connect($server_name,$db_user,$db_pass,$db_name);
+		$conn = mysql_connect($server_name,$db_user,$db_pass,$db_name);
 
 		if (!$conn) {
 
-			die("Connection Failed" . mysqli_connect_error());
-		}
+			die("Connection Failed" . mysql_connect_error);
+					}
+
 		else
-			//{echo "Connect Success";}
+			{echo "Connect Success";}
 
 ?>
