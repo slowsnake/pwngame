@@ -1,6 +1,7 @@
 		<?php
+		
 		include "config.php";	 //Database connectivity file. 
-
+echo 1;
 		$user_name=$_POST["username"];
 		$user_message=$_POST["message"];
 		$user_ip=$_POST["ipaddress"];
@@ -12,8 +13,7 @@
 		if(mysql_query($sql,$conn))
 			{
 			echo "Recorded successfully";
-			
-		}
+			}
 
 		else
 		{
