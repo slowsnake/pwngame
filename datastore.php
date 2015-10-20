@@ -4,21 +4,26 @@
 		$user_name=$_POST["username"];
 		$user_message=$_POST["message"];
 		$user_ip=$_POST["ipaddress"];
-
-
-		echo "Hello" .$user_name ."<br> Thanks for sending us the message <br> $user_message <br> Your IP is marked as $user_ip";
+		//var_dump($_POST);
 		
-		$sql="insert into tbl_data1 (user_name,user_message,user_ip) values ($username,$user_message,$user_ip)";
+
+
+		//echo "Hello" .$user_name ."<br> Thanks for sending us the message <br> $user_message <br> Your IP is marked as $user_ip";
+		
+		$sql="insert into tbl_data1 (user_name,user_message,user_ip) values('".$user_name"','".$user_message"','".$user_ip")';
 		echo "$sql";
+		exit("hi");
 		
-		if(mysqli_query($conn,$sql){
-			echo "Recorded successfully";
-		}
-		else
-		{
-			echo "Error: <br>" . mysqli_error($conn);
-
-		}
-		mysqli_close($conn);
-	
+//		
+		//if(mysqli_query($conn,$sql)
+			//{
+			//echo "Recorded successfully";
+		//}
+		//else
+		//{
+			//echo "Error: <br>" . mysqli_error($conn);
+//
+		//}
+		//mysqli_close($conn);
+//	
 		?>
