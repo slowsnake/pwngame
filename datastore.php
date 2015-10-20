@@ -1,5 +1,3 @@
-<html>
-	<body>
 		<?php
 		include config.php //Database connectivity file. 
 
@@ -11,6 +9,7 @@
 		echo "Hello" .$user_name ."<br> Thanks for sending us the message <br> $user_message <br> Your IP is marked as $user_ip";
 		
 		$sql="insert into tbl_data1 (user_name,user_message,user_ip) values ($username,$user_message,$user_ip)";
+		echo "$sql";
 		
 		if(mysqli_query($conn,$sql){
 			echo "Recorded successfully";
@@ -23,6 +22,3 @@
 		mysqli_close($conn);
 	
 		?>
-
-	</body>
-</html>
