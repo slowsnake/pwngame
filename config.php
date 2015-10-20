@@ -4,7 +4,8 @@
 		$db_pass="stupidpassword";
 		$db_name="learn1";
 
-		$conn = mysql_connect($server_name,$db_user,$db_pass,$db_name);
+		$conn = mysql_connect($server_name,$db_user,$db_pass);
+		$dbSelect = mysql_select_db($db_name,$conn)
 
 		if (!$conn) {
 
@@ -12,6 +13,8 @@
 					}
 
 		else
-			{echo "Connect Success";}
+			{
+				echo "Connect Success";
+			}
 
 ?>
