@@ -11,6 +11,6 @@
 			die("Connection Failed" . mysqli_connect_error());
 		}
 		else
-			{echo "Connect Success";}
+			//{echo "Connect Success";}
 
 ?>

@@ -10,7 +10,7 @@
 
 		//echo "Hello" .$user_name ."<br> Thanks for sending us the message <br> $user_message <br> Your IP is marked as $user_ip";
 		
-		$sql="insert into tbl_data1 (user_name,user_message,user_ip) values('".$user_name"','".$user_message"','".$user_ip")';
+		$sql="insert into tbl_data1 (user_name,user_message,user_ip) values('".$user_name"','".$user_message"','".$user_ip"');
 		echo "$sql";
 		exit("hi");
 		
