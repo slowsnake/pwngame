@@ -9,7 +9,7 @@
 		$sql="insert into tbl_data1 (user_name,user_message,user_ip) values('".$user_name."','".$user_message."','".$user_ip."')";
 		echo $sql;
 
-		if(mysql_query($sql)
+		if(mysql_query($sql,$conn))
 			{
 			echo "Recorded successfully";
 			
