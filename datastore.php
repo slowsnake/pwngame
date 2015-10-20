@@ -1,5 +1,5 @@
 		<?php
-		include config.php //Database connectivity file. 
+		include "config.php"; //Database connectivity file. 
 
 		$user_name=$_POST["username"];
 		$user_message=$_POST["message"];
